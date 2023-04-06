@@ -1,11 +1,15 @@
+%% See examples in the acmart-primary.zip/samples for details
 \documentclass[nonacm]{acmart}
 
-\usepackage{listings}
+%% Packages %%
+\usepackage{listings}  % code
 
-\title{RHEL security application in Centos (CS\ 296)}
+%% Preamble %%
+%% Metadata %%
+\title{Centos Operating sytem Security application}
 
-\author{Truong Phat Tu}
-\email{tuph01@luther.edu}
+\author{Truong PhaT Tu}
+\email{roman@luther.edu}
 \affiliation{
     \institution{Luther College}
     \streetaddress{700 College Dr}
@@ -17,25 +21,33 @@
 
 \date{\today}
 
+%% Document body %%
 \begin{document}
 
-    \begin{abstract}
-    
-    \end{abstract}
+%% Abstract. Must be before \maketitle is called %%
 
-    \maketitle
 
-    \tableofcontents
+\maketitle
 
-    \section{Introduction}
+\tableofcontents
 
-    \section{History of the subject}
+\section{Introduction}
 
-    \section{Prominent features}
+\section{History of the subject}
+\subsection{Centos}
+\cite{CentosAbout}
 
-    \section{Conclusion}
+\subsection{RHEL}
+\section{Prominent features}
+\cite{SEiRHEL}
+\cite{ALSHHfRtAR_SCAP_C}
+\cite{RHEL9Sh}
+\cite{FoCL}
 
-    \bibliographystyle{ACM-Reference-Format}
-    \bibliography{sources}
+\section{Conclusion}
+
+%% Bibliography. Must be just before the end of the document %%
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{rhel_source}
 
 \end{document}
