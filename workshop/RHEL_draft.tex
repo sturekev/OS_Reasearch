@@ -1,22 +1,22 @@
-%% See examples in the acmart-primary.zip/samples for details
-\documentclass[nonacm]{acmart}
+\documentclass[10pt]{article}
 
 %% Packages %%
+\usepackage{hyperref}  % links
+\usepackage{graphicx}  % images
 \usepackage{listings}  % code
+\usepackage{authblk}  % author info
+\usepackage{biblatex}  % bibliography
+\addbibresource{rhel_source.bib}
 
 %% Preamble %%
 %% Metadata %%
 \title{Centos Operating sytem Security application}
 
 \author{Truong PhaT Tu}
-\email{roman@luther.edu}
-\affiliation{
-    \institution{Luther College}
-    \streetaddress{700 College Dr}
-    \city{Decorah}
-    \state{Iowa}
-    \country{United States}
-    \postcode{52101}
+\affil{
+Luther College\\
+Decorah, IA 52101\\
+tuph01@luther.edu
 }
 
 \date{\today}
@@ -47,7 +47,6 @@
 \section{Conclusion}
 
 %% Bibliography. Must be just before the end of the document %%
-\bibliographystyle{ACM-Reference-Format}
-\bibliography{rhel_source}
+\printbibliography
 
 \end{document}
